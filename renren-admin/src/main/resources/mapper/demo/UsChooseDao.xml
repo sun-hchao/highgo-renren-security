@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.demo.dao.UsChooseDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.demo.entity.UsChooseEntity" id="usChooseMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+        <result property="crtime" column="crtime"/>
+        <result property="uptime" column="uptime"/>
+        <result property="phone" column="phone"/>
+    </resultMap>
+
+    <select id="search" resultType="io.renren.modules.demo.entity.UsChooseEntity">
+        select * from us_choose limit 100
+    </select>
+
+</mapper>
