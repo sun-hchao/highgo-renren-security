@@ -117,6 +117,7 @@
         <dependency>
             <groupId>com.highgo</groupId>
             <artifactId>hgdb-5.0-jdbc</artifactId>
+<!--            <artifactId>hgdb-4.0-jdbc42</artifactId>-->
             <version>1.0</version>
         </dependency>
         <dependency>
